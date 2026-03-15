@@ -3139,15 +3139,15 @@ input, select, textarea {
 		}
 
 		.spotlight.style1 .content {
-			border-color: #e44c65;
+			border-color: #84fab0;
 		}
 
 		.spotlight.style2 .content {
-			border-color: #5480f1;
+			border-color: #84fab0;
 		}
 
 		.spotlight.style3 .content {
-			border-color: #39c088;
+			border-color: #84fab0;
 		}
 
 		.spotlight.inactive .content {
@@ -3201,7 +3201,7 @@ input, select, textarea {
 	}
 
 		.wrapper.style2 {
-			background: #e44c65;
+			background: #4facfe;
 		}
 
 			.wrapper.style2 input[type="text"]:focus,
