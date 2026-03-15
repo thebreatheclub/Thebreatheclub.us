@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>The Breathe Club | Premium Car Detailing CA</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+            /* CONFIGURACIÓN NEON (Azul a Verde) */
+            :root {
+                --brand-blue: #4facfe; /* Azul/Cyan del lado izquierdo del logo */
+                --brand-green: #84fab0; /* Verde claro del lado derecho del logo */
+                --black-matte: #0b0b0b; /* Negro profundo */
+                --white-clean: #ffffff;
+            }
+
+            /* Parche de carga inmediata */
+            body, #page-wrapper, .landing { opacity: 1 !important; visibility: visible !important; }
+            body:before, #page-wrapper:before { display: none !important; }
+            
+            /* Fix para rellenar los círculos de las fotos (Lamborghini) */
+            #banner .image img, .spotlight .image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            
+            /* Aplicación de colores para textos e iconos generales */
+            #header #logo, 
+            .icon.major, 
+            .service-price, 
+            h2, h3 { 
+                /* Usamos el cyan para que resalte sobre el negro en el resto de la web */
+                color: var(--brand-blue) !important; 
+            }
+
+            /* Botones principales con el degradé del logo */
+            .button.primary { 
+                background: linear-gradient(90deg, var(--brand-blue) 0%, var(--brand-green) 100%) !important;
+                color: var(--black-matte) !important; 
+                font-weight: bold !important;
+                box-shadow: none !important;
+                border: none !important;
+            }
+
+            .button.primary:hover {
+                opacity: 0.8 !important; /* Efecto brillo al pasar el mouse */
+            }
+
+            #banner { background-color: var(--black-matte) !important; }
+            #banner h2 { color: var(--white-clean) !important; }
+
+            /* =========================================
+               EL RECUADRO DE CONTACTO EN DEGRADÉ 
+               ========================================= */
+            #five {
+                background: linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-green) 100%) !important;
+                color: var(--black-matte) !important;
+            }
+
+            /* Textos dentro del recuadro degradé (en negro para que se lean perfecto) */
+            #five header h2, #five header p {
+                color: var(--black-matte) !important;
+                font-weight: bold;
+            }
+
+            /* Botón de Square dentro del recuadro (Negro para hacer contraste con el fondo de color) */
+            #five .button.primary.fa-calendar-alt {
+                background: var(--black-matte) !important;
+                color: var(--white-clean) !important;
+            }
+
+            /* Estilos de componentes base */
+            .logo-img { height: 45px; vertical-align: middle; margin-right: 12px; }
+            .service-price { 
+                display: block; 
+                font-size: 1.4em; 
+                font-weight: bold; 
+                margin: 10px 0; 
+            }
+        </style>
+    </head>
+    <body class="landing is-preload">
+        <div id="page-wrapper">
+
+            <header id="header" class="alt">
+                <h1 id="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Logo" class="logo-img" onerror="this.style.display='none'">
+                        THE BREATHE CLUB
+                    </a>
+                </h1>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#one">About</a></li>
+                        <li><a href="#four">Services</a></li>
+                        <li><a href="#five" class="button primary">Book Now</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section id="banner">
+                <div class="content">
+                    <header>
+                        <h2>The Future of Clean</h2>
+                        <p>Premium Mobile Car Detailing in California.<br />
+                        Professional restoration and protection for your vehicle.</p>
+                    </header>
+                    <span class="image"><img src="images/pic01.jpg" alt="Luxury Detailing" /></span>
+                </div>
+            </section>
+
+            <section id="one" class="spotlight style1 bottom">
+                <span class="image fit main"><img src="images/pic02.jpg" alt="Detailing Excellence" /></span>
+                <div class="content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4 col-12-medium">
+                                <header>
+                                    <h2>Excellence in every detail</h2>
+                                    <p>Mobile service that comes to you.</p>
+                                </header>
+                            </div>
+                            <div class="col-8 col-12-medium">
+                                <p>At <strong>The Breathe Club</strong>, we specialize in high-end automotive care. Whether you need a deep interior extraction or a ceramic coating, we bring the best products and techniques directly to your location in California.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="two" class="spotlight style2 right">
+                <span class="image fit main"><img src="images/pic03.jpg" alt="Paint Restoration" /></span>
+                <div class="content">
+                    <header>
+                        <h2>Paint Restoration</h2>
+                        <p>Bring back the original shine.</p>
+                    </header>
+                    <p>Our paint correction process eliminates swirls and scratches, followed by professional protection that shields your investment from the California sun.</p>
+                </div>
+            </section>
+
+            <section id="three" class="spotlight style3 left">
+                <span class="image fit main bottom"><img src="images/pic04.jpg" alt="Interior Cleaning" /></span>
+                <div class="content">
+                    <header>
+                        <h2>Deep Interior Cleaning</h2>
+                        <p>A fresh and healthy environment.</p>
+                    </header>
+                    <p>We use steam cleaning and professional extraction to remove allergens, bacteria, and deep stains from every corner of your cabin.</p>
+                </div>
+            </section>
+
+            <section id="four" class="wrapper style1 special fade-up">
+                <div class="container">
+                    <header class="major">
+                        <h2>Our Service Menu</h2>
+                        <p>Choose the professional treatment your car deserves.</p>
+                    </header>
+                    <div class="box alt">
+                        <div class="row gtr-uniform">
+                            <section class="col-4 col-6-medium col-12-xsmall">
+                                <span class="icon solid alt major fa-car"></span>
+                                <h3>Basic Wash</h3>
+                                <span class="service-price">$40</span>
+                                <p>Exterior foam wash and interior vacuuming.</p>
+                            </section>
+                            <section class="col-4 col-6-medium col-12-xsmall">
+                                <span class="icon solid alt major fa-shuttle-van"></span>
+                                <h3>Full Detail</h3>
+                                <span class="service-price">From $180</span>
+                                <p>Deep interior extraction and premium exterior wax.</p>
+                            </section>
+                            <section class="col-4 col-6-medium col-12-xsmall">
+                                <span class="icon solid alt major fa-cogs"></span>
+                                <h3>Engine Steam</h3>
+                                <span class="service-price">$80</span>
+                                <p>Professional grease removal and bay restoration.</p>
+                            </section>
+                            <section class="col-4 col-6-medium col-12-xsmall">
+                                <span class="icon solid alt major fa-magic"></span>
+                                <h3>Paint Polishing</h3>
+                                <span class="service-price">$80</span>
+                                <p>Machine polishing to eliminate swirls and light scratches.</p>
+                            </section>
+                            <section class="col-4 col-6-medium col-12-xsmall">
+                                <span class="icon solid alt major fa-shield-alt"></span>
+                                <h3>Ceramic Coat</h3>
+                                <span class="service-price">From $120</span>
+                                <p>Ultimate protective seal with extreme gloss finish.</p>
+                            </section>
+                            <section class="col-4 col-6-medium col-12-xsmall">
+                                <span class="icon solid alt major fa-plus"></span>
+                                <h3>Add-ons</h3>
+                                <p>Pet Hair: +$20 | A/C Decon: $40 | Paint Treatment: $40</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="five" class="wrapper style2 special fade">
+                <div class="container">
+                    <header>
+                        <h2>Ready to Shine?</h2>
+                        <p>Book your premium detailing session online or message us directly.</p>
+                    </header>
+                    
+                    <ul class="actions special" style="margin-top: 2em; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                        
+                        <li>
+                            <a href="https://app.squareup.com/appointments/book/085lkw03pzt5ow/LCKCD3Q86TVH4/start" target="_blank" class="button primary large icon solid fa-calendar-alt"> Book Online</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://wa.me/1XXXXXXXXXX" target="_blank" class="button primary large icon brands fa-whatsapp" style="background-color: #25D366 !important; color: #ffffff !important; box-shadow: none !important;"> WhatsApp</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </section>
+
+            <footer id="footer">
+                <ul class="icons">
+                    <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; The Breathe Club. All rights reserved.</li>
+                </ul>
+            </footer>
+        </div>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
