@@ -247,12 +247,18 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({
-    duration: 700,      // Un poco más rápido para que sea fluido en móvil
-    once: true, 
-    offset: 50,         // Se activará casi de inmediato al aparecer
-    delay: 0,
-    easing: 'ease-out', // Movimiento más natural para procesadores móviles
-    mirror: false
+    duration: 800,   // Velocidad elegante
+    once: true,      // Se anima solo al bajar
+    offset: 50,      // Se activa rápido
+    disable: false,  // <--- ASEGÚRATE DE QUE DIGA FALSE
+    startEvent: 'DOMContentLoaded'
+  });
+
+  // Este truco ayuda a los Android a "despertar" la animación
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      AOS.refresh();
+    }, 500);
   });
 </script>
     </body>
