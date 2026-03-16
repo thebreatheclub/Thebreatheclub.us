@@ -247,10 +247,11 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({
-    duration: 1000, // 1 segundo de duración (suave)
-    once: true,      // Solo se anima la primera vez
-    offset: 120,     // Empieza a animar 120px antes de llegar
-    easing: 'ease-in-out-sine' // Movimiento más natural
+    duration: 800,   // Un poco más rápido para que se sienta fluido
+    once: true, 
+    offset: 20,      // Valor pequeño para que la animación dispare apenas entre en pantalla
+    disable: false,  // Asegura que no esté desactivado en móviles
+    startEvent: 'DOMContentLoaded' // Fuerza la carga apenas el HTML esté listo
   });
 </script>
     </body>
