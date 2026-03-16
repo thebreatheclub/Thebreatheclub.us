@@ -4216,3 +4216,29 @@ article, section, .wrapper {
     background-color: rgba(79, 172, 254, 0.1) !important;
     color: #4facfe !important;
 }
+/* --- UNIFICAR BOTÓN MÓVIL (ELIMINAR ROSA) --- */
+
+/* Forzar el fondo verde en todo el contenedor del botón */
+#titleBar .toggle, 
+#header .navPanelToggle {
+    background-color: #84fab0 !important;
+}
+
+/* Atacar específicamente el recuadro donde están las líneas */
+#titleBar .toggle:before,
+#header .navPanelToggle:before {
+    background-color: #84fab0 !important;
+    color: #000000 !important; /* Las líneas se verán negras */
+    box-shadow: none !important;
+}
+
+/* Por si hay un borde o sombra residual rosa */
+#titleBar .toggle {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Ajustar el logo para que no choque con el botón */
+#titleBar .logo {
+    margin-left: 10px !important;
+}
