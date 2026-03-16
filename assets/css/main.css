@@ -4242,3 +4242,32 @@ article, section, .wrapper {
 #titleBar .logo {
     margin-left: 10px !important;
 }
+/* --- AJUSTE DE TAMAÑO PARA MENÚ MÓVIL --- */
+
+/* 1. Reducir el ancho y alto del botón */
+#titleBar .toggle {
+    width: 60px !important;  /* Ancho más corto */
+    height: 44px !important; /* Alto alineado con la barra */
+    top: 0 !important;
+    left: 0 !important;
+}
+
+/* 2. Centrar las rayitas dentro del nuevo tamaño */
+#titleBar .toggle:before {
+    width: 60px !important;
+    height: 44px !important;
+    line-height: 44px !important; /* Centrado vertical */
+    font-size: 18px !important;   /* Rayitas un poco más finas */
+    background-color: #84fab0 !important; /* Tu verde */
+}
+
+/* 3. Ajustar el logo para que no se pegue al botón */
+#titleBar .title {
+    left: 65px !important; /* Empuja el nombre un poco a la derecha */
+    line-height: 44px !important;
+}
+
+/* 4. Opcional: Si quieres que el botón tenga esquinas un poco suaves (más sofisticado) */
+#titleBar .toggle {
+    border-bottom-right-radius: 4px;
+}
