@@ -246,15 +246,16 @@
         <script src="assets/js/main.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
+  // Inicialización optimizada para móviles
   AOS.init({
-    duration: 800,   // Velocidad elegante
-    once: true,      // Se anima solo al bajar
-    offset: 50,      // Se activa rápido
-    disable: false,  // <--- ASEGÚRATE DE QUE DIGA FALSE
+    duration: 800,    // Un poco más rápido para que se sienta fluido
+    once: true, 
+    offset: 20,       // MUY IMPORTANTE: Bajamos de 120 a 20 para que dispare rápido
+    disable: false,   // Forzamos que funcione en móviles
     startEvent: 'DOMContentLoaded'
   });
 
-  // Este truco ayuda a los Android a "despertar" la animación
+  // Este truco despierta a AOS en Android después de cargar imágenes
   window.addEventListener('load', function() {
     setTimeout(function() {
       AOS.refresh();
