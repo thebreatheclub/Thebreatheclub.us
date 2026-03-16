@@ -4329,3 +4329,20 @@ html, body {
         /* Permite que AOS intente animar, pero si falla, el elemento ya es visible */
     }
 }
+/* --- FIX PARA ANIMACIONES EN MÓVIL --- */
+html, body {
+    overflow-x: hidden !important; /* Evita que la página "baile" de lado */
+    width: 100%;
+    position: relative;
+}
+
+/* Si el texto se queda invisible en Android, esto lo fuerza a aparecer */
+[data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition-property: transform, opacity !important;
+}
+
+.aos-init.aos-animate {
+    /* Aquí se aplican las animaciones reales */
+}
