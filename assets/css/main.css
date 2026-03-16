@@ -4157,3 +4157,21 @@ input[type="button"],
     color: #ffffff !important;
     box-shadow: none !important;
 }
+/* --- FONDO NEGRO TOTAL PARA ELIMINAR EL GRIS --- */
+
+/* Ataca el fondo de toda la estructura */
+body, #page-wrapper, #main {
+    background-color: #000000 !important;
+    background-image: none !important;
+}
+
+/* Elimina el degradado grisáceo/azulado del banner principal */
+#banner {
+    background-color: #000000 !important;
+    background-image: none !important;
+}
+
+/* Asegura que los artículos y secciones no hereden fondos antiguos */
+article, section, .wrapper {
+    background-color: #000000 !important;
+}
