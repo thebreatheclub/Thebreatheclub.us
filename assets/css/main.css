@@ -4109,3 +4109,51 @@ input, select, textarea {
 					}
 
 	}
+/* --- PERSONALIZACIÓN THE BREATHE CLUB (Colores Oficiales) --- */
+
+/* 1. Fondos Negros para todas las secciones principales */
+#main, .wrapper, .wrapper.style1, .wrapper.style2, .wrapper.style3, #footer {
+    background-color: #000000 !important;
+}
+
+/* 2. Línea de acento superior en VERDE (#84fab0) */
+.wrapper.style1 {
+    border-top: solid 5px #84fab0 !important;
+}
+
+/* 3. Línea de acento lateral en AZUL (#4facfe) */
+.wrapper.style2 {
+    border-left: solid 5px #4facfe !important;
+}
+
+/* 4. Títulos en AZUL para que resalten sobre el negro */
+h1, h2, h3, h4, .major > h2, .logo a {
+    color: #4facfe !important;
+}
+
+/* 5. Color de selección de texto en VERDE */
+::selection {
+    background: #84fab0 !important;
+    color: #000000 !important;
+}
+
+/* 6. Texto general en blanco para máxima legibilidad */
+p, li, dd, dt, header p {
+    color: #ffffff !important;
+}
+
+/* 7. Botones con los nuevos colores */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+.button {
+    background-color: transparent !important;
+    box-shadow: inset 0 0 0 2px #84fab0 !important;
+    color: #84fab0 !important;
+}
+
+.button.primary {
+    background-color: #4facfe !important;
+    color: #ffffff !important;
+    box-shadow: none !important;
+}
