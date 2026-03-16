@@ -4317,3 +4317,15 @@ html, body {
 .aos-animate {
     pointer-events: auto;
 }
+/* Corrección para que las animaciones no fallen en móviles */
+@media screen and (max-width: 736px) {
+    [data-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+        transition-property: opacity, transform !important;
+    }
+    
+    .aos-animate {
+        /* Permite que AOS intente animar, pero si falla, el elemento ya es visible */
+    }
+}
