@@ -4175,3 +4175,44 @@ body, #page-wrapper, #main {
 article, section, .wrapper {
     background-color: #000000 !important;
 }
+/* --- ARREGLO FINAL PARA MÓVILES (THE BREATHE CLUB) --- */
+
+/* 1. Cambiar el cuadro rosa del menú por tu VERDE */
+#header .navPanelToggle, 
+#titleBar .toggle {
+    background-color: #84fab0 !important;
+}
+
+/* 2. Poner las rayitas del menú en NEGRO para que resalten sobre el verde */
+#header .navPanelToggle:before,
+#titleBar .toggle:before {
+    color: #000000 !important;
+}
+
+/* 3. Cambiar el fondo de la barra superior móvil a NEGRO */
+#titleBar {
+    background-color: #0b0b0b !important;
+}
+
+/* 4. Cambiar el nombre del negocio en la barra móvil a tu AZUL */
+#titleBar .title {
+    color: #4facfe !important;
+    font-weight: bold;
+}
+
+/* 5. Cambiar el fondo del panel que se despliega al tocar el menú */
+#navPanel {
+    background-color: #000000 !important;
+}
+
+/* 6. Color de los links dentro del menú desplegable */
+#navPanel nav a {
+    color: #ffffff !important;
+    border-bottom-color: rgba(132, 250, 176, 0.2) !important;
+}
+
+/* 7. El link activo o seleccionado en el menú móvil */
+#navPanel nav a.active {
+    background-color: rgba(79, 172, 254, 0.1) !important;
+    color: #4facfe !important;
+}
