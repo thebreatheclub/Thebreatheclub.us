@@ -4302,3 +4302,18 @@ article, section, .wrapper {
     height: 50px !important;
     line-height: 50px !important;
 }
+/* Evitar que el contenido se salga de la pantalla en móviles */
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Asegurar que los elementos animados no bloqueen los clics */
+[data-aos] {
+    pointer-events: none;
+}
+
+.aos-animate {
+    pointer-events: auto;
+}
